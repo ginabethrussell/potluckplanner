@@ -1,38 +1,175 @@
+
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+  width: 100%;
+  color: black;
   min-height: 100vh;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.home {  
+  background-image: url('food.jpg');
+  min-height: 600px; 
+  background-position: center; 
+  background-size: cover; 
+}
+.App a {
+  font-size: 2.2rem;
+}
+.home, .login, .signup, .userdashboard {
+  margin-top: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.userdashboard {
+  width: 75%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.userdashboard form {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.userdashboard .cardcontainer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  font-size: 1.6rem;
+  width: 100%;
+}
+
+.userdashboard button {
+  font-size: 1.6rem;
+  padding: 5px 8px;
+}
+
+.home h1 {
+  font-size: 5rem;
+  font-weight: bold;
+  color: black;
+  padding: 5px 8px;
+  border-radius: 10px;
+  background-color: rgba(255, 255,255,0.5);
+}
+
+.home button {
+  margin-top: 100px;
   color: white;
+  font-size: 2.4rem;
+  background-color: #3c9d6e;
 }
 
-.App-link {
-  color: #61dafb;
+.login, .signup {
+  min-height: 75vh;
+}
+.footer {
+  background-color: #3c9d6e;
+  min-height: 15vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+}
+.form-wrapper {
+  width: 70%;
+  max-width: 400px;
+  margin: 50px auto;
+  display: flex;
+  flex-direction: column;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.form-wrapper h2 {
+  font-size: 2.4rem;
+  font-weight: 400;
+  margin-bottom: 16px;
 }
+
+.form-wrapper input, .form-wrapper select, .form-wrapper textarea {
+  font-size: 1.6rem;
+  padding: 5px 8px;
+}
+
+.form-wrapper label {
+  font-size: 1.6rem;
+}
+
+.form-wrapper .btn-wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-wrapper button {
+  font-size: 1.6rem;
+  padding: 5px 12px;
+  text-align: center;
+}
+
+.form-wrapper form {
+  border: 1px solid #cdcdcd;
+  color: #625296;
+  padding: 20px 30px;
+  border-radius: 10px;
+  box-shadow: 0 1px 1px #cdcdcd;
+  cursor: pointer;
+  background-color: white;
+}
+
+.form-wrapper .error-message {
+  margin: 10px 0;
+  font-size: 1.6rem;
+  text-align: center;
+  color: crimson;
+}
+
+.loading {
+  text-align: center;
+}
+
+p.loading {
+  font-size: 1.8rem;
+}
+
+.howtos-wrapper {
+  width: 100%;
+  max-width: 800px;
+  margin: 20px auto;
+  font-size: 1.6rem; 
+}
+
+
+
+.formgroup {
+  width: 60%;
+  display: flex;
+  align-items: baseline;
+  justify-content: flex-end;
+}
+
+.formgroup label {
+  width: 40%;
+}
+
+.formgroup label, .formgroup input {
+  font-size: 1.6rem;
+}
+
+.form-controls {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end; 
+}
+
+.form-controls .top-row {
+  align-self: flex-start;
+}
+

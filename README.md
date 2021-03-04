@@ -1,4 +1,8 @@
-# Getting Started with Create React App
+# Potluck Planner Front End React SPA
+
+## Deployed with Netlify
+
+## Backend Java Spring PostgreSQL DB deployed with Heroku
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
